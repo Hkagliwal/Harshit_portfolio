@@ -22,13 +22,13 @@ const HeroSection = () => {
             <br></br>
             <TypeAnimation
               sequence={[
-                "Mr. Navneet",
-                1000,
-                "MERN STACK Developer",
+                "Mr. Harshit ",
                 1000,
                 "Software Engineer",
                 1000,
-                "Deep Learning",
+                "Machine Learning",
+                1000,
+                "Data Science",
                 1000,
               ]}
               wrapper="span"
@@ -41,13 +41,13 @@ const HeroSection = () => {
           </p>
           <div>
             <Link
-              href="https://github.com/mrnavi16"
+              href="https://github.com/Hkagliwal"
               className="px-6 inline-block py-3 w-full sm:w-fit rounded-full mr-4 bg-gradient-to-br from-primary-500 to-secondary-500 hover:bg-slate-200 text-white"
             >
               Hire Me
             </Link>
             <Link
-              href="https://drive.google.com/file/d/1z-EL1Xzw8W957XE80nsKlokez9TO4bMz/view?usp=drivesdk"
+              href="https://drive.google.com/file/d/1BJUhvmUkVsdKMXV4vFOORip2J5fkZta1/view?usp=sharing"
               className="px-1 inline-block py-1 w-full sm:w-fit rounded-full bg-gradient-to-br from-primary-500 to-secondary-500 hover:bg-slate-800 text-white mt-3"
             >
               <span className="block bg-[#121212] hover:bg-slate-800 rounded-full px-5 py-2">
@@ -64,7 +64,7 @@ const HeroSection = () => {
         >
           <div className="rounded-full bg-[#181818] w-[250px] h-[250px] lg:w-[400px] lg:h-[400px] relative">
             <Image
-              src="/images/hero-image.png"
+              src="/images/mypic1.jpeg"
               alt="hero image"
               className="rounded-[50px] absolute transform -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
               width={300}

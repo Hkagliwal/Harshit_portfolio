@@ -11,15 +11,18 @@ export async function POST(req, res) {
   console.log(email, subject, message);
   try {
     const data = await resend.emails.send({
-      from: fromEmail,
-      to: ["mrnavneet16@gmail.com", email],
+       from: fromEmail,
+      //  from: email,
+      //  to: ["hkagliwal@gmail.com", email],
+       to: ["hkagliwal@gmail.com"],
       subject: subject,
       react: (
         <>
           <h1>{subject}</h1>
-          <p>Thank you for contacting us!</p>
-          <p>connect me on Discord :- mrnavi16#7016</p>
-          <a href="https://www.linkedin.com/in/mrnavneet/">Linkedin</a>
+          <h2>{email}</h2>
+          <p>Thank you for contacting me!</p>
+          <p>Connect me on Linkedin</p>
+          <a href="https://www.linkedin.com/in/hkagliwal/">Linkedin</a>
           <p>{message}</p> 
         </>
       ),

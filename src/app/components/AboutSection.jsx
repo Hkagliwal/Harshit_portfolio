@@ -9,12 +9,13 @@ const TAB_DATA = [
     id: "skills",
     content: (
       <ul className="list-disc pl-2">
-        <li>Node.js</li>
-        <li>Express</li>
+        <li>C/C++</li>
+        <li>Java</li>
         {/* <li>PostgreSQL</li>
         <li>Sequelize</li> */}
-        <li>JavaScript</li>
-        <li>React</li>
+        <li>Python</li>
+        <li>Data Science</li>
+        <li>Machine Learning </li>
       </ul>
     ),
   },
@@ -23,9 +24,10 @@ const TAB_DATA = [
     id: "education",
     content: (
       <ul className="list-disc pl-2">
-        <li> <p>2020-2024</p>Pursuing Engineering From IIIT UNA HIMACHAL PRADESH</li>
-        <li> <p>2019</p>COMPLETED MY 10+2 FROM GOVT. SR. SEC. SCHOOL SRI KARANPUR (RBSC BOARD)</li>
-        <li> <p>2017</p>COMPLETED MY 10TH FROM TILAK PUBLIC SCHOOL SRIKARANPUR (RBSC BOARD)</li>
+        <li> <p>2021-2024</p>PURSUING MCA FROM NIT RAIPUR</li>
+        <li> <p>2018-2021</p>COMPLETED MY B.Sc. FROM COTTON UNIVERSITY IN STATISTICS</li>
+        <li> <p>2018</p>COMPLETED MY 10+2 FROM GYAN EDUCATIONAL INSTITUTE GUWAHATI (CBSE BOARD)</li>
+        <li> <p>2016</p>COMPLETED MY 10TH FROM DON BOSCO SCHOOL GUWAHATI (CBSE BOARD)</li>
       </ul>
     ),
   },
@@ -34,10 +36,20 @@ const TAB_DATA = [
     id: "certifications",
     content: (
       <ul className="list-disc pl-2">
-        <li>The Complete ReactJs Course - Basics to Advanced [2023]</li>
-        <li>Python And Flask Framework Complete Course</li>
-        <li>CSS crash Course For Beginners</li>
-        <li>Machine Learning Basics</li>
+        <li>Introduction to Machine Learning</li>
+        <li>SQL</li>
+        <li>Microsoft Excel: Begineer to Advanced</li>
+      </ul>
+    ),
+  },
+  {
+    title: "Achievements",
+    id: "achievements",
+    content: (
+      <ul className="list-disc pl-2">
+        <li> AIR 757 in Codekaze conducted by Coding Ninjas</li>
+        <li> 5 stars in Hackerrank Problem Solving & C++</li>
+        <li> Solved 500+ coding questions</li>
       </ul>
     ),
   },
@@ -60,12 +72,10 @@ const AboutSection = () => {
         <div className="mt-4 md:mt-0 text-left flex flex-col h-full">
           <h2 className="text-4xl font-bold text-white mb-4">About Me</h2>
           <p className="text-base lg:text-lg">
-            I am a full stack web developer with a passion for creating
-            interactive and responsive web applications. I have experience
-            working with JavaScript, React, Redux, Node.js, Express,
-             HTML, CSS, MongoDb, Mongoose, Git and Github. I am a quick learner and I am always
-            looking to expand my knowledge and skill set. I am a team player and
-            I am excited to work with others to create amazing applications.
+            Enthusiastic and a highly motivated student with good learning aptitude and communication skills, who likes to take
+            initiative and seek out new challenges. I am able to work well both in a team environment as well as using own
+            initiative. Proficient in a range of modern technologies C/C++, Java and Python with an interest in Machine Learning, 
+            Data Science & Statistics.
           </p>
           <div className="flex flex-row justify-start mt-8">
             <TabButton
@@ -88,6 +98,13 @@ const AboutSection = () => {
             >
               {" "}
               Certifications{" "}
+            </TabButton>
+            <TabButton
+              selectTab={() => handleTabChange("achievements")}
+              active={tab === "achievements"}
+            >
+              {" "}
+              Achievements{" "}
             </TabButton>
           </div>
           <div className="mt-8">
